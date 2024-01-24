@@ -21,9 +21,8 @@ public class ExpenseController {
     }
 
     @PostMapping("/addExpense")
-    public List<Expense> addExpense(Expense expense) {
+    public void addExpense(Expense expense) {
         expenses.add(expense);
-        return expenses;
     }
 
     @GetMapping("/viewExpenses")
