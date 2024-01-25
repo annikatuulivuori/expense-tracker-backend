@@ -8,6 +8,7 @@ package dto;
  *
  */
 public class Expense {
+    private final int id;
     private final String desc;
     private final double amount;
 
@@ -16,9 +17,18 @@ public class Expense {
      * @param desc Description
      * @param amount Amount
      */
-    public Expense(String desc, double amount) {
+    public Expense(int id, String desc, double amount) {
+        this.id = id;
         this.desc = desc;
         this.amount = amount;
+    }
+
+    /**
+     * Getter for id
+     * @return Identifier of expense
+     */
+    public int getId() {
+        return id;
     }
 
     /**
