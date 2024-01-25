@@ -23,8 +23,8 @@ public class ExpenseTrackerBackendApplication {
 	public CommandLineRunner commandLineRunner(ExpenseController expenseController) {
 		return args -> {
 
-			expenseController.addExpense(new Expense("Cat Food", 154.94));
-			expenseController.addExpense(new Expense("Litter", 27.99));
+			expenseController.addExpense(new Expense(1, "Cat Food", 154.94));
+			expenseController.addExpense(new Expense(2, "Litter", 27.99));
 
 			List<Expense> allExpenses = expenseController.viewExpenses();
 			System.out.println("All Expenses:");
