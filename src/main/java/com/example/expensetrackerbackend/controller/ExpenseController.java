@@ -1,12 +1,10 @@
 package com.example.expensetrackerbackend.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import dto.Expense;
 
@@ -27,6 +25,16 @@ public class ExpenseController {
 
     @GetMapping("/viewExpenses")
     public List<Expense> viewExpenses() {
+
+        return expenses;
+    }
+
+    @DeleteMapping("/deleteExpense/{expenseId")
+    public List<Expense>  deleteExpense(@PathVariable int expenseId) {
+        expenses = expenses.stream()
+                .filter(expense -> expense.getId() != expenseId)
+                .collect(Collectors.toList());
+
         return expenses;
     }
 
