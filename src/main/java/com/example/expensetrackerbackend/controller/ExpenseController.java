@@ -10,6 +10,7 @@ import dto.Expense;
 
 @RestController
 @RequestMapping("/api/expenses")
+@CrossOrigin(origins = "http://localhost:3000")
 public class ExpenseController {
     private List<Expense> expenses = new ArrayList<>();
 
@@ -19,7 +20,7 @@ public class ExpenseController {
     }
 
     @PostMapping("/addExpense")
-    public void addExpense(Expense expense) {
+    public void addExpense(@RequestBody Expense expense) {
         expenses.add(expense);
     }
 
