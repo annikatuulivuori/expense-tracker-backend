@@ -25,7 +25,6 @@ public class ExpenseController {
 
     @GetMapping("/viewExpenses")
     public List<Expense> viewExpenses() {
-
         return expenses;
     }
 
