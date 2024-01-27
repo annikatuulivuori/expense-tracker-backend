@@ -29,7 +29,7 @@ public class ExpenseController {
         return expenses;
     }
 
-    @DeleteMapping("/deleteExpense/{expenseId")
+    @DeleteMapping("/deleteExpense/{expenseId}")
     public List<Expense>  deleteExpense(@PathVariable int expenseId) {
         expenses = expenses.stream()
                 .filter(expense -> expense.getId() != expenseId)
