@@ -1,2 +1,2 @@
 *.java linquist-detectable=true
-*.springboot linquist-detectable=true
+*.spring-boot linquist-detectable=true
