@@ -23,7 +23,7 @@ Before starting this project, I knew I had goals to learn new skills. Here is a 
 - gain more understanging in RESTful API design and implementation
 - practice error handling and logging
 
-**Did I achieve these goals?** Short answer is yes, kind of. Long asnwer is that this project is not perfect - and it shows. Error handling is not where I would like it to be. There are also no test done and I would like to learn more about the file structure in Spring Boot projects.
+**Did I achieve these goals?** Short answer is yes, kind of. Long answer is that this project is not perfect - and it shows. Error handling is not where I would like it to be. There are also no test done and I would like to learn more about the file structure in Spring Boot projects.
 
 ## 💭 How can this project be improved?
 
